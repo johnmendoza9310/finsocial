@@ -10,7 +10,7 @@ export class SupplierDataComponent implements OnInit {
   public userForm: FormGroup;
   public error: boolean = true;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
     this.createForm();
@@ -42,7 +42,6 @@ export class SupplierDataComponent implements OnInit {
 
   sendForm() {
     if (this.userForm.valid) {
-      console.log('valido', this.userForm.invalid, this.error);
 
       this.error = true;
     }
@@ -50,7 +49,6 @@ export class SupplierDataComponent implements OnInit {
     if (this.userForm.invalid) {
       this.error = false;
 
-      console.log('invalido', this.userForm.invalid, this.error);
     }
   }
 }

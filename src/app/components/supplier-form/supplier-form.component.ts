@@ -17,12 +17,11 @@ export class SupplierFormComponent implements OnInit {
   start() {
     if (this.checked === false) {
       Swal.fire({
-        icon:'warning',
+        icon: 'warning',
         text: 'Para continuar con el proceso de inscripción es necesario autorizar el tratamiento de datos y los términos y condiciones del sitio.!',
       });
-    }else{
-
-      this.router.navigateByUrl('supplier-data')
+    } else {
+      this.router.navigateByUrl('supplier-data');
     }
   }
 }
