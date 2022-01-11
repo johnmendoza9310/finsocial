@@ -1,0 +1,36 @@
+<div class="supplier-content">
+  <app-supplier-terms></app-supplier-terms>
+
+  <div class="person-type">
+    Seleccione el tipo de persona bajo el cual desea realizar el registro
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon">
+        <img src="../../../assets/icons/user.png" alt="" />
+      </div>
+      <div class="card-content">
+        Seleccione esta opción si usted es persona natural.
+      </div>
+      <div class="button"></div>
+
+      <button (click)="start()" class="button">INICIAR</button>
+    </div>
+
+    <div class="card">
+      <div class="icon">
+        <img src="../../../assets/icons/users.png" alt="" />
+      </div>
+      <div class="card-content">
+        Seleccione esta opción si usted es persona jurídica.
+      </div>
+      <div class="button"></div>
+
+      <button (click)="start()" class="button">INICIAR</button>
+    </div>
+  </div>
+
+  <input type="checkbox" [(ngModel)]="checked"/>Autorizo el tratamiento de mis datos personales y
+  autorizo términos y condiciones de la página web.
+</div>

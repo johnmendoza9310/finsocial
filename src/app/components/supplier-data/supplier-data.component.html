@@ -1,0 +1,142 @@
+<div class="data-content">
+  <app-supplier-terms></app-supplier-terms>
+
+  <form [formGroup]="userForm" (ngSubmit)="sendForm()">
+    <div class="input-group mb-4 medium-input">
+      <input
+        formControlName="supplierName"
+        type="text"
+        class="form-control"
+        [className]="error ? 'form-control' : 'form-control error'"
+        placeholder="Nombres"
+      />
+    </div>
+
+    <div class="input-group mb-4 medium-input">
+      <input
+        formControlName="supplierLastName"
+        type="text"
+        class="form-control"
+        [className]="error ? 'form-control' : 'form-control error'"
+        placeholder="Apellidos"
+      />
+    </div>
+
+    <div class="input-group mb-4 short-input">
+      <input
+        formControlName="supplierDocument"
+        type="text"
+        class="form-control"
+        [className]="error ? 'form-control' : 'form-control error'"
+        placeholder="NIT/Cédula"
+      />
+    </div>
+
+    <div class="input-group mb-4 short-input">
+      <input
+        formControlName="supplierAddres"
+        type="text"
+        class="form-control"
+        [className]="error ? 'form-control' : 'form-control error'"
+        placeholder="dirección"
+      />
+    </div>
+
+    <div class="input-group mb-4 short-input">
+      <input
+        formControlName="supplierCity"
+        type="text"
+        class="form-control"
+        [className]="error ? 'form-control' : 'form-control error'"
+        placeholder="Ciudad"
+      />
+    </div>
+
+    <div class="input-group mb-4 short-input">
+      <input
+        formControlName="supplierPhoneNumber"
+        type="text"
+        class="form-control"
+        [className]="error ? 'form-control' : 'form-control error'"
+        placeholder="Teléfono"
+      />
+    </div>
+
+    <div class="input-group mb-4 short-input">
+      <input
+        formControlName="supplierEmail"
+        type="text"
+        class="form-control"
+        [className]="error ? 'form-control' : 'form-control error'"
+        placeholder="Correo electrónico"
+      />
+    </div>
+
+    <div class="input-group mb-4 short-input">
+      <input
+        formControlName="supplierProduct"
+        type="text"
+        class="form-control"
+        [className]="error ? 'form-control' : 'form-control error'"
+        placeholder="Describa producto o servicio"
+      />
+    </div>
+
+    <div class="input-group mb-4 short-input">
+      <input
+        formControlName="name"
+        type="text"
+        class="form-control"
+        [className]="error ? 'form-control' : 'form-control error'"
+        placeholder="Nombres"
+      />
+    </div>
+
+    <div class="input-group mb-4 short-input">
+      <input
+        formControlName="lastname"
+        type="text"
+        class="form-control"
+        [className]="error ? 'form-control' : 'form-control error'"
+        placeholder="Apellidos"
+      />
+    </div>
+
+    <div class="input-group mb-4 short-input">
+      <input
+        formControlName="position"
+        type="text"
+        class="form-control"
+        [className]="error ? 'form-control' : 'form-control error'"
+        placeholder="Cargo"
+      />
+    </div>
+
+    <div class="input-group mb-4 medium-input">
+      <input
+        formControlName="email"
+        type="text"
+        class="form-control"
+        [className]="error ? 'form-control' : 'form-control error'"
+        placeholder="Correo electrónico"
+      />
+    </div>
+
+    <div class="input-group mb-4 medium-input">
+      <input
+        formControlName="phoneNumber"
+        type="text"
+        class="form-control"
+        [className]="error ? 'form-control' : 'form-control error'"
+        placeholder="teléfono"
+      />
+    </div>
+
+    <div class="button">
+      <button type="submit">
+        Siguiente
+        <i class="fas fa-arrow-circle-right"></i>
+      </button>
+    </div>
+  </form>
+</div>
